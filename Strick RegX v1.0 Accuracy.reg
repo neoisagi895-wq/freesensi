@@ -1,0 +1,115 @@
+Windows Registry Editor Version 5.00
+
+; ====================================================================
+; Strick RegX v1.0 Accuracy
+; ====================================================================
+
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"ActiveWindowTracking"=dword:00000000
+"Beep"="No"
+"DoubleClickHeight"="4"
+"DoubleClickSpeed"="550"
+"DoubleClickWidth"="4"
+"ExtendedSounds"="No"
+"MouseHoverHeight"="4"
+"MouseHoverWidth"="4"
+"MouseHoverTime"=dword:00000000
+"MouseSensitivity"="4"
+"MouseSpeed"="1"
+"MouseThreshold1"="6"
+"MouseThreshold2"="10"
+"MouseTrails"="0"
+"SnapToDefaultButton"="0"
+"SwapMouseButtons"="0"
+"SmoothMouseXCurve"=hex:
+
+00,00,00,00,00,00,00,00,
+
+00,00,04,00,00,00,00,00,
+
+00,00,10,00,00,00,00,00,
+
+00,00,20,00,00,00,00,00,
+
+00,00,40,00,00,00,00,00
+"SmoothMouseYCurve"=hex:
+
+00,00,00,00,00,00,00,00,
+
+00,00,04,00,00,00,00,00,
+
+00,00,11,00,00,00,00,00,
+
+00,00,24,00,00,00,00,00,
+
+00,00,4B,00,00,00,00,00
+
+[HKEY_USERS.DEFAULT\Control Panel\Mouse]
+"ActiveWindowTracking"=dword:00000000
+"Beep"="No"
+"DoubleClickHeight"="4"
+"DoubleClickSpeed"="550"
+"DoubleClickWidth"="4"
+"ExtendedSounds"="No"
+"MouseHoverHeight"="4"
+"MouseHoverWidth"="4"
+"MouseHoverTime"=dword:00000000
+"MouseSensitivity"="4"
+"MouseSpeed"="1"
+"MouseThreshold1"="6"
+"MouseThreshold2"="10"
+"MouseTrails"="0"
+"SnapToDefaultButton"="0"
+"SwapMouseButtons"="0"
+"SmoothMouseXCurve"=hex:
+
+00,00,00,00,00,00,00,00,
+
+00,00,04,00,00,00,00,00,
+
+00,00,10,00,00,00,00,00,
+
+00,00,20,00,00,00,00,00,
+
+00,00,40,00,00,00,00,00
+"SmoothMouseYCurve"=hex:
+
+00,00,00,00,00,00,00,00,
+
+00,00,04,00,00,00,00,00,
+
+00,00,11,00,00,00,00,00,
+
+00,00,24,00,00,00,00,00,
+
+00,00,4B,00,00,00,00,00
+
+; --- MULTIMEDIA GAME TASK SCHEDULER (APPLIES ON GAME LAUNCH) ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"Affinity"=dword:00000000
+"Background Only"="No"
+"Clock Rate"=dword:00002710
+"GPU Priority"=dword:00000008
+"Priority"=dword:00000008
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+
+; --- WIN32 PRIORITY SEPARATION (APPLIES IMMEDIATELY) ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000026
+
+; --- BLUESTACKS / EMULATOR HIGH PRIORITY HOOK (APPLIES ON APP LAUNCH) ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\HD-Player.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000003
+"IoPriority"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Ld9BoxHeadless.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000003
+"IoPriority"=dword:00000003
+
+; --- DIRECTX & GAMEDVR FLAGS (APPLIES ON APP LAUNCH) ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectX]
+"MaxFrameQueueSize"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR]
+"value"=dword:00000000
